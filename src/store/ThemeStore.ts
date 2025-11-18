@@ -23,7 +23,7 @@ export const useThemeStore = create<ThemeStore>()(
             "dark",
             newTheme === "dark"
           );
-        }
+        }   
 
         set({ theme: newTheme });
       },

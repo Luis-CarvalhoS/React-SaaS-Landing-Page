@@ -98,13 +98,17 @@ const useThemeStore = create<ThemeStore>()(
   persist(
     (set, get) => ({
       theme:
-        typeof window !== "undefined" && window.matchMedia("(prefers-color-scheme: dark)").matches
+        typeof window !== "undefined" &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
           ? "dark"
           : "light",
       toggleTheme: () => {
         const newTheme = get().theme === "light" ? "dark" : "light";
         if (typeof document !== "undefined") {
-          document.documentElement.classList.toggle("dark", newTheme === "dark");
+          document.documentElement.classList.toggle(
+            "dark",
+            newTheme === "dark"
+          );
         }
         set({ theme: newTheme });
       },
@@ -142,7 +146,11 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-export const Button: React.FC<ButtonProps> = ({ onClick, children, className = "" }) => {
+export const Button: React.FC<ButtonProps> = ({
+  onClick,
+  children,
+  className = "",
+}) => {
   return (
     <button
       onClick={onClick}
@@ -164,4 +172,3 @@ export const Button: React.FC<ButtonProps> = ({ onClick, children, className = "
 
 - **Design Tokens:**  
   The design tokens for colors, shadows, and typography are defined in the global CSS file using the `@theme` directive, ensuring consistent dark/light mode styling.
-
