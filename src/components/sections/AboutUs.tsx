@@ -17,8 +17,9 @@ export const AboutUs = () => {
             />
           </div>
         </div>
+
         <div className="w-full md:w-7/12 lg:w-1/2 flex flex-col">
-          <Title> About Our AI Solution</Title>
+          <Title> About Our AI Solution </Title>
           <Paragraph>
             We are on a mission to empower businesses with transformative AI
             technology. Our team of experts combines industry‑leading research
@@ -26,10 +27,11 @@ export const AboutUs = () => {
             unique needs. Join us and lead the digital revolution in your
             industry.
           </Paragraph>
+
           <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
             <Info
               title="Mission"
-              description="To revolutionize industries through cutting-edge AI solutions that drive efficiency, innovation, and growth."
+              description="Our mission is to use AI for the good of humanity and the planet."
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +51,7 @@ export const AboutUs = () => {
             </Info>
             <Info
               title="Vision"
-              description="Our vision is to dirve business innovation and growth through AI technology."
+              description="Our vision is to drive business innovation and growth."
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
