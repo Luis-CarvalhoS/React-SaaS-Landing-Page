@@ -6,7 +6,6 @@ const logos = [
   "openai",
   "paypal",
   "slack",
-  "uber", 
   "spotify",
   "youtube",
 ];
